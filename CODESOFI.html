@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes for You ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #quote {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+            max-width: 90%;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 18px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover, button:active {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>For You ❤️</h1>
+    <p id="quote">Tap the button to see a quote!</p>
+    <button id="quoteButton">Show Me a Quote</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const quotes = [
+                "Distance means so little when someone means so much. 💌",
+                "Every second apart is a second closer to being together again. ⏳",
+                "You are my favorite notification. ❤️",
+                "Even miles away, you're my closest thought. 🌍✨",
+                "No matter the distance, you are home to me. 🏡"
+            ];
+
+            function showQuote() {
+                const randomIndex = Math.floor(Math.random() * quotes.length);
+                document.getElementById("quote").textContent = quotes[randomIndex];
+            }
+
+            const button = document.getElementById("quoteButton");
+
+            // Ensure the button works by using both click and touchstart
+            button.addEventListener("click", showQuote);
+            button.addEventListener("touchend", function () {
+    		showQuote();
+        });
+    </script>
+</body>
+</html>
+
+
