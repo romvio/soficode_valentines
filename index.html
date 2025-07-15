@@ -11,7 +11,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #ffe6e6;
+            background-color: #e6c0f8;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -31,7 +31,7 @@
             margin-top: 20px;
             padding: 12px 20px;
             font-size: 18px;
-            background-color: #ff4d4d;
+            background-color: #b720f7;
             color: white;
             border: none;
             border-radius: 8px;
@@ -39,28 +39,29 @@
             transition: 0.3s ease;
         }
         button:hover, button:active {
-            background-color: #cc0000;
+            background-color: #b720f7;
         }
     </style>
 </head>
 <body>
     <h1>Para ti Langostita ❤️</h1>
-    <p id="quote">Presiona el botón si quieres leer un recordatorio</p>
+    <p id="quote">Felices 1 año y 8 meses preciosa! Presiona el botón si quieres leer un recordatorio</p>
     <button id="quoteButton">Muéstrame :)</button>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const quotes = [
                 "Cada 'Buenos díaaaas' que te mando al despertar significa que te pienso desde mi día hasta mi noche.",
-                "El amor no se mide en kilómetros, sino en la intención de acortar la distancia.",
-                "La distancia nos da espacio para extrañar, valorar y crecer. ❤️",
                 "Amo como eres, como eres silly conmigo me vuelve locooooo.✨",
-                "Amo lo TIERNA QUE ERES OMGGGG.",
+                "Aunque pienses que no me importes por estar en mi rollo, tú serás siempre súper importante para mí y no cambia lo mucho que te amo y te adoro. Recuerda que, aunque estemos en nuestra propia energía, no significa que no amemos al otro.",
+                "Hay momentos difíciles inevitablemente. La distancia es difícil, pero mínimo quiero intentar la distancia contigo mientras siga este mensaje aquí. Intentar es mejor que arrepentirse de no vivir con la persona que crees que es tu langosta.",
                 "Realmente amo como mueves esas caderas. 👀",
+                "Ayúdame a ayudarnos. Tratemos de ser más empáticos y considerados. Volvamos a nuestros acuerdos y démonos cuenta cuando seamos tóxicos. Regresemos al amor y la razón. Recordemos los 4 acuerdos por favorrrrr.",
                 "¿Recuerdas cuando nos pusimos a bailar en el metro de Barcelona? Loquitos del centro, vaya.",
                 "Agradezco enormemente pasar a tu lado hermosas experiencias, como ir de viaje a nuevos lugares y ver en tus ojos el cielo de ese nuevo lugar.",
+                "1 año y 8 meses de amor construido! Hagámoslo más real :)",
                 "Si las cosas se ponen mal, recuerda que lo que yo he sentido por ti siempre será lo más genuino, hermoso y maduro que he tenido.",
-                "No me arrepiento de compartir risas, abrazos, experiencias, etc., contigo.",
+                "No me arrepiento de compartir risas, abrazos, experiencias, etc. contigo.",
                 "Siempre miro atrás y veo lo mucho que hemos vivido y lo que hemos logrado. ¿Lo ves?",
                 "¡FUI A VERTE A PUERTOOOOOOOOOO AHHHHHHH!",
                 "Recuerda que te escapaste de tus abuelos para ir a verme JAJAJA.",
@@ -68,17 +69,29 @@
                 "Recuerda todas esas veces que te veía a los ojos mientras... hehehe.",
                 "Recuerda cómo nos queríamos quedar cada segundo juntos el último día que nos vimos en persona...",
                 "YO TE AMO ENTERAMENTE. NADIE HA TENIDO TANTO CARIÑO POR MÍ Y NUESTRO AMOR COMO TÚ. Amo tu ser y tu ser conmigo 🥹.",
-                "Recuerda, no hay ausencia cuando hay certeza.",
-                "El amor no es estar juntos todo el tiempo, sino construir algo que trascienda el tiempo y el espacio.",
-                "Dos personas pueden estar a miles de kilómetros y seguir siendo un equipo. SOMOS EQUIPO.",
-                "Perdona si no estoy tan pendiente o sientes que no te doy tiempo 🥹. Estoy muy ocupado en este semestre, pero siempre te tengo en mi mente.",
+                "SOMOS EQUIPO.",
+                "Perdona si no estoy tan pendiente o sientes que no te doy tiempo 🥹.",
                 "🎟️ CUPÓN SORPRESA: Te has ganado un cupón para que veamos una peli que tú quieras.",
                 "🎟️ CUPÓN SORPRESA: Te has ganado un cupón… ¿Ganado tho? Mala suerte esta vez. Si te sale esto, tienes que ver una peli que RO quiera [ACUERDO 1: DECIR LA VERDAD. SI SALE ESTO, SE TIENE QUE DECIR INMEDIATAMENTE].",
+                "🎟️ CUPÓN PICANTE: Vale por una noche de masajito con aceite… donde termine lo que tenga que terminar 😈.",
+                "🎟️ CUPÓN DE ANTOJO: Elige cualquier lugar para comer, prometo no quejarme.",
+                "🎟️ CUPÓN MIMOS: Vale por un día entero de consentirte, sin peros, sin excusas. (Aplican restricciones: solo válido si me das muchos besos). 😚",
+                "🎟️ CUPÓN CACHONDO: Si te sale este cupón, tienes que mandarme una foto como yo te lo pida. 📸🔥",
+                "🎟️ CUPÓN DEL AMOR INCONDICIONAL: Vale por un abrazo largo, llorar si hace falta, y decirnos todo lo que sentimos, sin filtros ni máscaras.",
+                "🎟️ CUPÓN: ¡Plan sorpresa organizado por mí! No puedes preguntar nada. Solo confía y alístate. 😏",
+                "🎟️ CUPÓN DE LOCURITAS: Vamos a hacer algo completamente espontáneo. Como... ¿comprar un vuelo hoy y ver qué pasa? ✈️",
+                "🎟️ CUPÓN DE DORMIR: Vale por una noche de dormir en videollamada!",
+                "🎟️ CUPÓN REBELDE: Si te sale este cupón, hoy rompemos una regla juntos. Hay que ser creativos jajaja",
+                "🎟️ CUPÓN SEXY COOKING: Cocinamos juntos, pero tú solo puedes llevar ropa interior o pijama sexy. (Y sí, yo también). 🍝🔥",
+                "🎟️ CUPÓN DE DESQUITE: Si has tenido un mal día, puedes usar este cupón para desquitarte conmigo... verbalmente nom, con amorcito.",
+                "🎟️ CUPÓN DE LA VERDAD: Si este te sale, ambos tenemos que decir algo que nunca hayamos dicho del otro. Prometemos no enojarnos.",
+                "🎟️ CUPÓN REWIND: Hoy podemos revivir cualquier cita o momento que tú elijas. Recreamos todo. Mismo outfit si se puede. 😍",
+                "🎟️ CUPÓN SILENCIOSO: Hoy solo hablamos con miradas y caricias durante una hora. Nada de palabras. A ver si podemos. 👀",
+                "🎟️ CUPÓN HOT SEAT: 5 preguntas incómodas sin filtro. Tú me las haces a mí, pero después es mi turno.",
                 "FUIMOS A JAPÓN JUNTOS. FUE EL MEJOR VIAJE DE TODOS. No pude escoger a otra mejor persona que tú para vivir todo lo que vivimos.",
-                "Amo realmente cómo eres de dulce con las otras personas de manera genuina, es increíble.",
-                "Amo cómo mueves tus piecitos cuando estás feliz.",
+                "Me encanta verte haciendo lo que más te apasiona y lo que te has propuesto, me hace súper feliz y me emociona demasiado por ti!",
+                "Amo cómo mueves tus piecitos y como definen tu estado de ánimo jajaja.",
                 "No hay otro momento donde te veas más hermosa que recién levantada JAJAJA.",
-                "Amo tu comprensión, cariño, entusiasmo y tu manera de expresarte.",
                 "Aunque me desespere a veces, amo mucho la forma en que te expresas y cuentas las cosas de tu vida (no olvides que yo también tengo una vida tho jajaja).",
                 "Eres una de las personas más importantes en mi vida por lo que eres. Debes estar muy orgullosa de eso. Puedes estar tranquila sabiendo que, en mi vida, siempre serás ese alguien que hizo un impacto profundo en mí, haciéndome ver y experimentar el amor como debe de ser."
             ];
